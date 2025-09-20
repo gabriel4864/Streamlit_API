@@ -14,3 +14,8 @@ def conexao(query):
     )
 
     dataframe = pd.read_sql(query, conn)
+    # Executar o sql e armazenar o resultado no dataframe
+
+    conn.close()
+
+    return dataframe
